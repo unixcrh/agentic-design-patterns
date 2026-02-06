@@ -1,4 +1,7 @@
 \usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codebg}{RGB}{248,248,248}
+\definecolor{framecolor}{RGB}{221,221,221}
 \lstset{
   breaklines=true,
   breakatwhitespace=true,
@@ -6,5 +9,24 @@
   columns=fullflexible,
   keepspaces=true,
   showstringspaces=false,
-  upquote=true
+  upquote=true,
+  backgroundcolor=\color{codebg},
+  frame=single,
+  rulecolor=\color{framecolor},
+  framesep=5pt,
+  framerule=0.5pt,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{orange},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=8pt,
+  captionpos=b,
+  aboveskip=10pt,
+  belowskip=10pt,
+  xleftmargin=15pt,
+  xrightmargin=15pt
 }
+
